@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Panel del Administrador{% endblock %}
+
+{% block content %}
+<div class="card shadow p-4">
+    <div class="d-flex align-items-center mb-3">
+        <img src="{% static 'img/logo_softmedic.png' %}" alt="Logo Soft-Medic" style="height:60px; margin-right:15px;">
+        <h2 class="text-primary mb-0">Panel del Administrador</h2>
+    </div>
+    <p>Bienvenido, <strong>{{ user.nombre }}</strong>. Desde este panel puede gestionar usuarios, configurar el sistema y acceder a reportes globales.</p>
+    <hr>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">👥 Gestión de usuarios</a>
+        </li>
+        <li class="list-group-item">
+            <a href="{% url 'users:reportes_sistema' %}" class="text-decoration-none">📊 Reportes del sistema</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">⚙️ Configuración general</a>
+        </li>
+    </ul>
+
+    <div class="mt-4">
+        <a href="{% url 'users:logout' %}" class="btn btn-outline-danger">Cerrar sesión</a>
+    </div>
+</div>
+{% endblock %}

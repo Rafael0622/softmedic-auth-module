@@ -1,0 +1,1943 @@
+ERROR 2025-11-08 20:50:36,070 [django.request] log - Internal Server Error: /users/admin_dashboard/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\users\decorators.py", line 15, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\users\views.py", line 102, in admin_dashboard
+    return render(request, 'users/admin_dashboard.html')
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'reportes_sistema' not found. 'reportes_sistema' is not a valid view function or pattern name.
+ERROR 2025-11-08 21:31:31,726 [django.request] log - Internal Server Error: /users/reportes/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\users\views.py", line 185, in reportes_sistema
+    content = f.read().strip() or "Sin registros disponibles."
+              ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf3 in position 82: invalid continuation byte
+ERROR 2025-11-13 17:05:10,259 [django.request] log - Internal Server Error: /users/recepcionista_dashboard/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'historias'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\users\decorators.py", line 47, in wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\users\views.py", line 125, in recepcionista_dashboard
+    return render(request, 'users/recepcionista_dashboard.html')
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'historias' is not a registered namespace
+ERROR 2025-11-13 17:11:52,277 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: historias_historiaclinica
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: historias_historiaclinica
+ERROR 2025-11-13 17:12:11,927 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: historias_historiaclinica
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: historias_historiaclinica
+ERROR 2025-11-13 17:12:17,094 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: historias_historiaclinica
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: historias_historiaclinica
+ERROR 2025-11-13 17:12:29,579 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: historias_historiaclinica
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: historias_historiaclinica
+ERROR 2025-11-13 17:21:12,764 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'ver_historia' not found. 'ver_historia' is not a valid view function or pattern name.
+ERROR 2025-11-13 17:47:45,588 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table historias_historiaclinica has no column named codigo_prestador
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\historias\views.py", line 35, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 1873, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table historias_historiaclinica has no column named codigo_prestador
+ERROR 2025-11-13 17:48:38,610 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: historias_historiaclinica.codigo_prestador
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: historias_historiaclinica.codigo_prestador
+ERROR 2025-11-13 22:39:16,091 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-13 22:39:24,459 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-13 22:39:33,031 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-14 18:22:15,774 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-14 18:25:24,003 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-14 18:25:25,019 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-14 18:25:26,073 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-14 18:25:51,525 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+ERROR 2025-11-23 14:47:10,000 [django.request] log - Internal Server Error: /pacientes/registrar/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 151, in registrar_paciente
+    return render(request, "pacientes/registrar_paciente.html", {"form": form})
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pacientes/registrar_paciente.html
+ERROR 2025-11-23 15:45:02,896 [django.request] log - Internal Server Error: /pacientes/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 134, in listar_pacientes
+    return render(request, "pacientes/listar_pacientes.html", {"pacientes": pacientes})
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pacientes/listar_pacientes.html
+ERROR 2025-11-23 15:49:16,178 [django.request] log - Internal Server Error: /pacientes/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 134, in listar_pacientes
+    return render(request, "pacientes/listar_pacientes.html", {"pacientes": pacientes})
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'crear_paciente' not found. 'crear_paciente' is not a valid view function or pattern name.
+ERROR 2025-11-23 15:50:04,117 [django.request] log - Internal Server Error: /pacientes/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 134, in listar_pacientes
+    return render(request, "pacientes/listar_pacientes.html", {"pacientes": pacientes})
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'crear_paciente' not found. 'crear_paciente' is not a valid view function or pattern name.
+ERROR 2025-11-23 15:51:02,039 [django.request] log - Internal Server Error: /pacientes/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 134, in listar_pacientes
+    return render(request, "pacientes/listar_pacientes.html", {"pacientes": pacientes})
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'crear_paciente' not found. 'crear_paciente' is not a valid view function or pattern name.
+ERROR 2025-11-23 17:13:01,833 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CustomUser' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1075, in render
+    output = self.filter_expression.resolve(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 743, in resolve
+    arg_vals.append(arg.resolve(context))
+                    ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 854, in resolve
+    value = self._resolve_lookup(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in <CustomUser: Dr. Juan Médico (Médico)>
+ERROR 2025-11-23 17:13:19,731 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CustomUser' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1075, in render
+    output = self.filter_expression.resolve(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 743, in resolve
+    arg_vals.append(arg.resolve(context))
+                    ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 854, in resolve
+    value = self._resolve_lookup(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in <CustomUser: Dr. Juan Médico (Médico)>
+ERROR 2025-11-23 18:21:27,365 [django.request] log - Internal Server Error: /pacientes/editar/7/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 145, in editar_paciente
+    return render(request, "pacientes/editar_paciente.html", {
+        "form": form,
+        "paciente": paciente
+    })
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pacientes/editar_paciente.html
+ERROR 2025-11-23 20:03:11,432 [django.request] log - Internal Server Error: /pacientes/editar/5/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 158, in editar_paciente
+    return render(request, "pacientes/paciente_form.html", {"form": form, "paciente": paciente})
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+        "'%s' tag with name '%s' appears more than once" % (bits[0], block_name)
+    )
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+ERROR 2025-11-23 20:11:06,196 [django.request] log - Internal Server Error: /pacientes/editar/5/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 164, in editar_paciente
+    return render(request, "pacientes/form.html", {
+        "form": form,
+        "paciente": paciente
+    })
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pacientes/form.html
+ERROR 2025-11-23 20:11:08,573 [django.request] log - Internal Server Error: /pacientes/editar/5/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 164, in editar_paciente
+    return render(request, "pacientes/form.html", {
+        "form": form,
+        "paciente": paciente
+    })
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pacientes/form.html
+ERROR 2025-11-23 20:12:05,253 [django.request] log - Internal Server Error: /pacientes/editar/5/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\pacientes\views.py", line 164, in editar_paciente
+    return render(request, "pacientes/form.html", {
+        "form": form,
+        "paciente": paciente
+    })
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: pacientes/form.html
+ERROR 2025-12-02 19:26:38,859 [django.request] log - Internal Server Error: /historias/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: historias_historiaclinica.fecha_apertura
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: historias_historiaclinica.fecha_apertura
+ERROR 2025-12-07 14:58:21,716 [django.request] log - Internal Server Error: /historias/crear/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\historias\views.py", line 58, in dispatch
+    if request.user.rol != 'MEDICO':
+       ^^^^^^^^^^^^^^^^
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'rol'
+ERROR 2025-12-07 16:13:46,406 [django.request] log - Internal Server Error: /historias/reportes/pacientes-atendidos/
+Traceback (most recent call last):
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\PRIXMA SOFTWARE PROJECTS\softmedic\historias\views_reportes.py", line 35, in reporte_pacientes_atendidos_csv
+    h.fecha_creacion.strftime("%Y-%m-%d") if h.fecha_creacion else "",
+                                             ^^^^^^^^^^^^^^^^
+AttributeError: 'HistoriaClinica' object has no attribute 'fecha_creacion'. Did you mean: 'fecha_impresion'?

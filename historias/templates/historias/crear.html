@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}Crear Historia Clínica{% endblock %}
+
+{% block content %}
+
+<h3 class="mb-4">Crear Historia Clínica</h3>
+
+<form method="post" class="row g-3">
+    {% csrf_token %}
+
+    <!-- Número de Historia -->
+    <div class="col-md-6">
+        <label class="form-label">{{ form.numero_historia.label }}</label>
+        {{ form.numero_historia|add_class:"form-control" }}
+        {% if form.numero_historia.errors %}
+            <div class="text-danger small">{{ form.numero_historia.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Tipo de Historia -->
+    <div class="col-md-6">
+        <label class="form-label">{{ form.tipo_historia.label }}</label>
+        {{ form.tipo_historia|add_class:"form-control" }}
+        {% if form.tipo_historia.errors %}
+            <div class="text-danger small">{{ form.tipo_historia.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Motivo de Consulta -->
+    <div class="col-md-12">
+        <label class="form-label">{{ form.motivo_consulta.label }}</label>
+        {{ form.motivo_consulta|add_class:"form-control" }}
+        {% if form.motivo_consulta.errors %}
+            <div class="text-danger small">{{ form.motivo_consulta.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Puerta de Entrada -->
+    <div class="col-md-6">
+        <label class="form-label">{{ form.puerta_entrada.label }}</label>
+        {{ form.puerta_entrada|add_class:"form-control" }}
+        {% if form.puerta_entrada.errors %}
+            <div class="text-danger small">{{ form.puerta_entrada.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Resumen Clínico -->
+    <div class="col-md-12">
+        <label class="form-label">{{ form.resumen_clinico.label }}</label>
+        {{ form.resumen_clinico|add_class:"form-control" }}
+        {% if form.resumen_clinico.errors %}
+            <div class="text-danger small">{{ form.resumen_clinico.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Notas Adicionales -->
+    <div class="col-md-12">
+        <label class="form-label">{{ form.notas_adicionales.label }}</label>
+        {{ form.notas_adicionales|add_class:"form-control" }}
+        {% if form.notas_adicionales.errors %}
+            <div class="text-danger small">{{ form.notas_adicionales.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Médico Responsable -->
+    <div class="col-md-6">
+        <label class="form-label">{{ form.medico_responsable_id.label }}</label>
+        {{ form.medico_responsable_id|add_class:"form-control" }}
+        {% if form.medico_responsable_id.errors %}
+            <div class="text-danger small">{{ form.medico_responsable_id.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Paciente -->
+    <div class="col-md-6">
+        <label class="form-label">{{ form.paciente_id.label }}</label>
+        {{ form.paciente_id|add_class:"form-control" }}
+        {% if form.paciente_id.errors %}
+            <div class="text-danger small">{{ form.paciente_id.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Usuario que registra -->
+    <div class="col-md-6">
+        <label class="form-label">{{ form.usuario_registra_id.label }}</label>
+        {{ form.usuario_registra_id|add_class:"form-control" }}
+        {% if form.usuario_registra_id.errors %}
+            <div class="text-danger small">{{ form.usuario_registra_id.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Botón Guardar -->
+    <div class="col-12 text-end">
+        <button type="submit" class="btn btn-primary">
+            Guardar Historia Clínica
+        </button>
+    </div>
+
+</form>
+
+<!-- ========================================================= -->
+<!-- ERRORES GENERALES (lo que tú ya tenías) -->
+<!-- ========================================================= -->
+{% if form.errors %}
+<div class="alert alert-danger mt-4">
+    <ul class="mb-0">
+        {% for field in form %}
+            {% for error in field.errors %}
+                <li><strong>{{ field.label }}:</strong> {{ error }}</li>
+            {% endfor %}
+        {% endfor %}
+        {% for error in form.non_field_errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+{% endblock %}

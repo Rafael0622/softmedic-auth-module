@@ -1,0 +1,357 @@
+INFO 2025-11-08 20:21:32,996 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 20:22:14,930 [users] views - LOGOUT: Usuario lisemaviva09@gmail.com (ADMIN) cerró sesión.
+INFO 2025-11-08 20:23:09,889 [users] views - LOGIN EXITOSO: Usuario dr.juan@softmedic.com (MEDICO)
+INFO 2025-11-08 20:23:09,990 [users] views - ACCESO: dr.juan@softmedic.com ingresó al panel MÉDICO.
+INFO 2025-11-08 20:27:51,087 [users] views - LOGOUT: Usuario dr.juan@softmedic.com (MEDICO) cerró sesión.
+WARNING 2025-11-08 20:28:14,817 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-08 20:28:33,285 [users] views - LOGIN EXITOSO: Usuario lisemaviva09@gmail.com (ADMIN)
+INFO 2025-11-08 20:28:33,368 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 20:47:59,929 [users] views - LOGIN EXITOSO: Usuario lisemaviva09@gmail.com (ADMIN)
+INFO 2025-11-08 20:48:00,015 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 20:50:35,791 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 20:53:44,716 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 20:53:47,839 [users] views - ACCESO: lisemaviva09@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 20:53:52,851 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 20:53:57,524 [users] views - ACCESO: lisemaviva09@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 20:54:04,527 [users] views - LOGOUT: Usuario lisemaviva09@gmail.com (ADMIN) cerró sesión.
+INFO 2025-11-08 20:54:23,013 [users] views - LOGIN EXITOSO: Usuario santoyarafael@gmail.com (RECEPCIONISTA)
+INFO 2025-11-08 20:54:23,110 [users] views - ACCESO: santoyarafael@gmail.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-08 20:54:37,031 [users] views - LOGOUT: Usuario santoyarafael@gmail.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-08 20:54:52,067 [users] views - LOGIN EXITOSO: Usuario lisemaviva09@gmail.com (ADMIN)
+INFO 2025-11-08 20:54:52,153 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 20:54:53,922 [users] views - ACCESO: lisemaviva09@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 21:27:29,673 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 21:27:32,941 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 21:27:35,576 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 21:27:49,896 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 21:27:54,201 [users] views - LOGOUT: Usuario proyectoprismarafber@gmail.com (ADMIN) cerró sesión.
+INFO 2025-11-08 21:28:09,800 [users] views - LOGIN EXITOSO: Usuario lisemaviva09@gmail.com (ADMIN)
+INFO 2025-11-08 21:28:09,904 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 21:28:14,667 [users] views - ACCESO: lisemaviva09@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 21:31:30,215 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 21:33:37,411 [users] views - ACCESO: lisemaviva09@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 21:52:52,030 [users] views - LOGIN EXITOSO: Usuario lisemaviva09@gmail.com (ADMIN)
+INFO 2025-11-08 21:52:52,121 [users] views - ACCESO: lisemaviva09@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 21:53:23,617 [users] views - LOGOUT: Usuario lisemaviva09@gmail.com (ADMIN) cerró sesión.
+INFO 2025-11-08 21:53:52,875 [users] views - LOGIN EXITOSO: Usuario proyectoprismarafber@gmail.com (ADMIN)
+INFO 2025-11-08 21:53:52,962 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 21:53:56,899 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-08 21:54:43,952 [users] views - LOGOUT: Usuario proyectoprismarafber@gmail.com (ADMIN) cerró sesión.
+WARNING 2025-11-08 21:54:56,383 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-08 21:59:40,607 [users] views - LOGIN EXITOSO: Usuario proyectoprismarafber@gmail.com (ADMIN)
+INFO 2025-11-08 21:59:40,700 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-08 22:20:38,558 [users] views - LOGIN EXITOSO: Usuario rafasantoya1981@gmail.com (MEDICO)
+INFO 2025-11-08 22:20:38,642 [users] views - ACCESO: rafasantoya1981@gmail.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-08 22:23:47,076 [users] views - LOGOUT: Usuario rafasantoya1981@gmail.com (MEDICO) cerró sesión.
+INFO 2025-11-08 22:24:02,167 [users] views - LOGIN EXITOSO: Usuario santoyarafael@gmail.com (RECEPCIONISTA)
+INFO 2025-11-08 22:24:02,266 [users] views - ACCESO: santoyarafael@gmail.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-09 11:20:38,349 [users] views - LOGIN EXITOSO: Usuario santoyarafael@gmail.com (RECEPCIONISTA)
+INFO 2025-11-09 11:20:38,461 [users] views - ACCESO: santoyarafael@gmail.com ingresó al panel RECEPCIONISTA.
+WARNING 2025-11-09 12:00:16,489 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-09 12:00:25,229 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-09 12:00:43,914 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-09 12:01:21,958 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-09 12:03:04,625 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-09 12:20:15,879 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-09 12:21:05,169 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-09 12:21:39,101 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-09 12:21:39,195 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-09 12:21:48,999 [users] views - LOGOUT: Usuario rs@softmedic.com (MEDICO) cerró sesión.
+WARNING 2025-11-09 12:31:43,094 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-09 12:32:11,366 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-09 12:32:11,504 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 12:32:15,351 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-09 12:55:32,123 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-09 12:55:32,264 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 12:55:38,445 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-09 12:55:44,743 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 12:55:50,355 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-09 12:56:14,414 [users] views - LOGIN EXITOSO: Usuario ao@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-09 12:56:14,529 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-09 12:57:59,106 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-09 12:58:12,206 [users] views - LOGOUT: Usuario ao@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-09 13:06:18,404 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-09 13:06:18,493 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 13:06:30,033 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-09 13:06:46,927 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-09 13:06:47,022 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-09 13:06:55,672 [users] views - LOGOUT: Usuario rs@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-11-09 13:07:16,697 [users] views - LOGIN EXITOSO: Usuario ao@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-09 13:07:16,785 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-09 13:10:47,946 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-09 13:11:00,334 [users] views - LOGOUT: Usuario ao@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-09 13:11:24,463 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-09 13:11:24,552 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 13:11:31,191 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-09 13:11:53,199 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 13:11:56,514 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-09 13:12:14,413 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-09 13:12:14,508 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-09 13:16:55,412 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-09 13:16:59,894 [users] views - LOGOUT: Usuario rs@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-11-09 13:17:29,812 [users] views - LOGIN EXITOSO: Usuario recepcionista@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-09 13:17:29,907 [users] views - ACCESO: recepcionista@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-09 13:31:01,571 [users] views - ACCESO: recepcionista@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-09 13:31:06,958 [users] views - LOGOUT: Usuario recepcionista@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-09 13:31:25,079 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-09 13:31:25,178 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 15:55:09,647 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-09 15:55:09,918 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 15:55:15,105 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-09 15:55:19,755 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 15:55:23,224 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+WARNING 2025-11-09 17:08:53,650 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-09 17:09:12,597 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-09 17:09:12,705 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 17:09:16,185 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-09 17:09:23,074 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-09 17:09:27,954 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-09 17:09:46,471 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-09 17:09:46,648 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 13:54:20,805 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-13 13:54:20,925 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+WARNING 2025-11-13 15:02:18,501 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-13 15:02:45,127 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-13 15:03:17,921 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-13 15:03:17,979 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-13 15:03:21,835 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-13 15:03:27,058 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-13 15:03:48,863 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-13 15:03:48,945 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 15:04:19,658 [users] views - LOGOUT: Usuario rs@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-11-13 15:04:31,405 [users] views - LOGIN EXITOSO: Usuario ao@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-13 15:04:31,497 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 15:17:12,939 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 15:29:41,697 [users] views - LOGIN EXITOSO: Usuario ao@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-13 15:29:41,762 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 15:48:38,044 [users] views - LOGIN EXITOSO: Usuario ao@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-13 15:48:38,119 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 15:52:00,078 [users] views - LOGOUT: Usuario ao@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-13 15:52:17,701 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-13 15:52:17,786 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 15:53:44,966 [users] views - LOGOUT: Usuario rs@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-11-13 15:54:17,209 [users] views - LOGIN EXITOSO: Usuario ao@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-13 15:54:17,315 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 16:58:06,668 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-13 16:58:06,774 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 16:58:15,236 [users] views - LOGOUT: Usuario rs@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-11-13 16:58:34,176 [users] views - LOGIN EXITOSO: Usuario ao@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-13 16:58:34,258 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 17:05:09,643 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 17:07:08,421 [users] views - ACCESO: ao@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-13 17:07:27,492 [users] views - LOGOUT: Usuario ao@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-13 17:07:46,398 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-13 17:07:46,463 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 17:11:34,897 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 17:15:24,246 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 17:26:26,586 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-13 17:26:26,684 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 17:47:01,664 [users] views - LOGIN EXITOSO: Usuario rs@softmedic.com (MEDICO)
+INFO 2025-11-13 17:47:01,762 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 17:48:34,234 [users] views - ACCESO: rs@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+WARNING 2025-11-13 18:03:55,928 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-11-13 18:04:14,937 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-13 18:07:23,094 [users] views - LOGIN EXITOSO: Usuario proyectoprismarafber@gmail.com (ADMIN)
+INFO 2025-11-13 18:07:23,160 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó al panel ADMIN.
+INFO 2025-11-13 18:07:30,488 [users] views - ACCESO: proyectoprismarafber@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-13 18:27:34,206 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-13 18:27:34,320 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 18:33:12,391 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 21:22:00,778 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-13 21:22:00,895 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 21:23:02,263 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 21:54:41,786 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-13 21:54:41,861 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 22:11:43,465 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-13 22:11:43,585 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 22:17:13,880 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 22:19:17,733 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 22:21:16,209 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 22:32:07,760 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-13 22:32:07,843 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 22:34:03,911 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-13 22:39:07,421 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-14 18:22:09,465 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-14 18:22:09,559 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-14 18:25:49,499 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-14 19:57:35,239 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-14 19:57:35,330 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 20:00:53,095 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 20:17:17,151 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-14 20:17:17,356 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 21:16:19,750 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-14 21:16:19,858 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 21:16:40,512 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 21:25:38,437 [users] views - LOGOUT: Usuario recepcionista1@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-14 21:25:52,113 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-14 21:25:52,246 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-14 21:25:56,484 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-14 21:26:00,879 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-14 21:26:06,717 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-14 21:26:36,916 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-14 21:26:37,011 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 21:29:28,118 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 22:09:00,637 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-14 22:09:00,744 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 22:12:37,355 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 22:14:22,888 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 22:14:27,637 [users] views - LOGOUT: Usuario recepcionista1@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-11-14 22:14:59,651 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-14 22:14:59,746 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 22:23:47,877 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-14 22:32:59,696 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-14 22:32:59,768 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-15 18:15:08,735 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-15 18:15:08,823 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-17 10:40:43,182 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-17 10:40:43,443 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-17 10:48:55,377 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-17 11:04:50,209 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-17 11:04:50,305 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-17 11:06:04,572 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-17 11:50:39,942 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-17 11:50:40,031 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 13:50:41,548 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-23 13:50:41,670 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-23 13:50:49,588 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-23 13:58:21,125 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-23 13:58:55,146 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-23 13:58:55,215 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 14:04:50,450 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 14:04:53,095 [users] views - LOGOUT: Usuario medico1@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-11-23 14:05:13,045 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 14:05:13,125 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 14:24:49,822 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 14:24:49,906 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 14:47:06,459 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 14:47:06,570 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 15:20:03,566 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 15:20:03,660 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 15:32:31,684 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 15:39:33,968 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-23 15:39:41,118 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-23 15:39:46,570 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-23 15:40:12,735 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 15:40:12,794 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 15:44:09,183 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 15:49:23,865 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 15:55:34,372 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 15:55:34,463 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 16:10:18,432 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 16:10:27,461 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 16:11:04,443 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-23 16:11:04,509 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-23 16:31:28,522 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-23 16:31:28,629 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-23 16:35:32,460 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-23 16:35:56,427 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-23 16:35:56,496 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 16:44:44,918 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 16:55:38,964 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-23 16:55:39,047 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 16:55:58,506 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 16:58:31,637 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 17:00:07,154 [users] views - LOGOUT: Usuario medico1@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-11-23 17:00:25,604 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-11-23 17:00:25,682 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-11-23 17:00:37,529 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-11-23 17:01:38,538 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-23 17:01:58,287 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 17:01:58,359 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 17:02:17,994 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 17:06:44,137 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-11-23 17:07:14,786 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-23 17:07:14,872 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 17:12:58,768 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 17:13:12,859 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 17:48:35,675 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-11-23 17:48:35,771 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-11-23 18:04:48,611 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 18:04:48,688 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 18:06:45,136 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 18:12:47,834 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 18:12:47,899 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 18:21:19,078 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 18:41:26,286 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 18:41:26,378 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 18:53:17,381 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 19:03:26,428 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 19:03:26,507 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 19:36:06,845 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 19:36:06,926 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 19:41:17,270 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 19:41:17,344 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-23 20:02:31,246 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-23 20:02:31,332 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+WARNING 2025-11-28 17:54:32,124 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-11-28 17:56:54,185 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-11-28 17:56:54,266 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-11-28 17:57:44,594 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 13:01:05,106 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-12-02 13:01:05,201 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-12-02 13:01:27,354 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-12-02 13:21:37,626 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-12-02 13:21:37,725 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-12-02 13:21:49,590 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-12-02 13:22:12,673 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-12-02 13:22:12,737 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 13:22:24,194 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 13:22:31,997 [users] views - LOGOUT: Usuario recepcionista1@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-12-02 13:22:52,106 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-02 13:22:52,171 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+WARNING 2025-12-02 17:04:26,056 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-12-02 17:04:54,500 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+WARNING 2025-12-02 17:56:23,618 [users] views - LOGIN FALLIDO: Formulario de autenticación inválido.
+INFO 2025-12-02 18:30:09,719 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-12-02 18:30:09,839 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-12-02 18:30:31,695 [users] views - LOGOUT: Usuario admin@softmedic.com (ADMIN) cerró sesión.
+INFO 2025-12-02 18:30:53,745 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-02 18:30:53,848 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-02 18:51:12,622 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-02 18:51:12,735 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-02 19:26:28,669 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-02 19:26:28,800 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-02 19:34:12,672 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-02 21:39:03,154 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-12-02 21:39:03,269 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 22:11:39,394 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-12-02 22:11:41,371 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 22:13:32,538 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 22:14:22,519 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 22:17:01,161 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 22:30:59,531 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-12-02 22:30:59,617 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-02 22:47:43,100 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-12-02 22:47:43,200 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-12-02 22:47:51,719 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-12-02 23:07:01,138 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-12-02 23:07:01,240 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-12-03 00:24:05,991 [users] views - LOGIN EXITOSO: Usuario prismasoftwareprojects.sm@gmail.com (ADMIN)
+INFO 2025-12-03 00:24:06,137 [users] views - ACCESO: prismasoftwareprojects.sm@gmail.com ingresó al panel ADMIN.
+INFO 2025-12-03 00:26:30,730 [users] views - ACCESO: prismasoftwareprojects.sm@gmail.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-12-04 19:46:45,769 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-04 19:46:45,864 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-04 20:40:14,529 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-04 20:40:14,617 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 14:23:37,092 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-07 14:23:37,211 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 15:10:26,477 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-07 15:10:26,576 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 15:25:10,653 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 15:28:35,263 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-07 15:28:35,361 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 15:56:24,006 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-07 15:56:24,127 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 15:57:09,597 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-07 15:57:09,675 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 15:57:13,627 [users] views - LOGOUT: Usuario medico1@softmedic.com (MEDICO) cerró sesión.
+INFO 2025-12-07 15:57:33,488 [users] views - LOGIN EXITOSO: Usuario recepcionista1@softmedic.com (RECEPCIONISTA)
+INFO 2025-12-07 15:57:33,576 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-07 15:57:56,108 [users] views - ACCESO: recepcionista1@softmedic.com ingresó al panel RECEPCIONISTA.
+INFO 2025-12-07 15:57:59,400 [users] views - LOGOUT: Usuario recepcionista1@softmedic.com (RECEPCIONISTA) cerró sesión.
+INFO 2025-12-07 15:58:18,897 [users] views - LOGIN EXITOSO: Usuario admin@softmedic.com (ADMIN)
+INFO 2025-12-07 15:58:18,978 [users] views - ACCESO: admin@softmedic.com ingresó al panel ADMIN.
+INFO 2025-12-07 15:58:24,523 [users] views - ACCESO: admin@softmedic.com ingresó a la sección de REPORTES DEL SISTEMA.
+INFO 2025-12-07 16:13:41,684 [users] views - LOGIN EXITOSO: Usuario medico1@softmedic.com (MEDICO)
+INFO 2025-12-07 16:13:41,814 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).
+INFO 2025-12-07 16:17:07,244 [users] views - ACCESO: medico1@softmedic.com ingresó al panel MÉDICO (sin restricciones).

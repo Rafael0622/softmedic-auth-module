@@ -1,0 +1,12 @@
+<!-- pacientes/templates/pacientes/detalle.html -->
+<h1>Detalle del Paciente</h1>
+
+{% if user.rol in ["ADMIN", "MEDICO"] %}
+<p>ID del paciente: {{ id }}</p>
+<p>Información clínica y administrativa disponible según tu rol.</p>
+
+<!-- Aquí podrías agregar más detalles del paciente cuando tengas el modelo real -->
+
+{% else %}
+<p>No tienes permisos para ver el detalle de este paciente.</p>
+{% endif %}

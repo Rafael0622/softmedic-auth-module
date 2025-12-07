@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Panel del Médico{% endblock %}
+
+{% block content %}
+<div class="card shadow p-4 rounded-4">
+    <h3 class="text-primary mb-3">🩺 Panel del Médico</h3>
+    <p>Bienvenido, <strong>{{ usuario.nombre }}</strong>. Desde este panel puedes acceder libremente a todas las funciones del módulo clínico.</p>
+
+    <hr>
+
+    <div class="row text-center">
+        <div class="col-md-4 mb-3">
+            <a href="#" class="btn btn-outline-primary w-100">📋 Historias Clínicas</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="#" class="btn btn-outline-primary w-100">📅 Agenda Médica</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="#" class="btn btn-outline-primary w-100">🧾 Recetas y Órdenes</a>
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a href="{% url 'users:logout' %}" class="btn btn-danger">🚪 Cerrar Sesión</a>
+    </div>
+</div>
+{% endblock %}

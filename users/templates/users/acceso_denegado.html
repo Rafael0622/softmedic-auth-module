@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Acceso Denegado{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <div class="card shadow-sm p-4">
+        <!-- ✅ Asegúrate de que la ruta de imagen sea correcta -->
+        <img src="{% static 'img/logo_softmedic.png' %}" alt="Logo Soft-Medic"
+             style="height:70px;" class="mb-3">
+
+        <h2 class="text-danger">🚫 Acceso Denegado</h2>
+        <p class="mt-3">
+            No tienes permisos para acceder a este módulo o sección del sistema.
+        </p>
+        <hr>
+
+        <!-- ✅ Botón dinámico según autenticación -->
+        {% if user.is_authenticated %}
+            <a href="{% url 'users:login' %}" class="btn btn-secondary mt-2">
+                🔒 Cerrar sesión y volver al inicio
+            </a>
+            <a href="javascript:history.back()" class="btn btn-primary mt-2">
+                🔙 Volver atrás
+            </a>
+        {% else %}
+            <a href="{% url 'users:login' %}" class="btn btn-primary mt-2">
+                🔑 Iniciar sesión
+            </a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

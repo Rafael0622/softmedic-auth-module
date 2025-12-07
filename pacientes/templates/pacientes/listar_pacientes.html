@@ -1,0 +1,131 @@
+<!-- -------------------------------------------------------------------
+     Proyecto: SOFT-MEDIC
+     Archivo: softmedic/pacientes/templates/pacientes/listar_pacientes.html
+     Versión: 1.4
+     Fecha: 02/12/2025
+     Elaborado por: Prixma Software Projects
+     Revisado por: Dirección Técnica de SOFT-MEDIC
+-----------------------------------------------------------------------
+     Descripción:
+     Plantilla oficial para el listado de pacientes.
+     Incluye botón VOLVER dinámico según rol y búsqueda avanzada.
+------------------------------------------------------------------- -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Pacientes Registrados</h2>
+
+        <div>
+            <!-- ✅ BOTÓN VOLVER DINÁMICO SEGÚN ROL -->
+            {% if user.rol == 'RECEPCIONISTA' %}
+                <a href="{% url 'users:recepcionista_dashboard' %}" class="btn btn-secondary me-2">
+                    ⬅ Volver
+                </a>
+            {% elif user.rol == 'MEDICO' %}
+                <a href="{% url 'users:medico_dashboard' %}" class="btn btn-secondary me-2">
+                    ⬅ Volver
+                </a>
+            {% elif user.rol == 'ADMIN' %}
+                <a href="{% url 'users:admin_dashboard' %}" class="btn btn-secondary me-2">
+                    ⬅ Volver
+                </a>
+            {% endif %}
+
+            <!-- ✅ BOTÓN REGISTRAR -->
+            <a href="{% url 'pacientes:registrar_paciente' %}" class="btn btn-success">
+                ➕ Registrar nuevo paciente
+            </a>
+        </div>
+    </div>
+
+    <!-- --------------------- FORMULARIO DE BÚSQUEDA --------------------- -->
+    <form method="get" action="{% url 'pacientes:buscar_pacientes' %}" class="row g-2 mb-3">
+        <div class="col-md-4">
+            <input type="text" name="nombre" placeholder="Nombre" class="form-control" value="{{ nombre|default:'' }}">
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="documento" placeholder="Documento" class="form-control" value="{{ documento|default:'' }}">
+        </div>
+        <div class="col-md-3">
+            <select name="medico" class="form-select">
+                <option value="">-- Médico tratante --</option>
+                {% for medico in medicos %}
+                    <option value="{{ medico.id }}" {% if medico.id|stringformat:"s" == medico_id %}selected{% endif %}>
+                        {{ medico.get_full_name|default:medico.nombre }}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary w-100">🔍 Buscar</button>
+        </div>
+    </form>
+
+    {% if messages %}
+    <div class="alert alert-info">
+        {% for message in messages %}
+            <p class="mb-0">{{ message }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Nombre</th>
+                <th>Identificación</th>
+                <th>Fecha nacimiento</th>
+                <th>Contacto</th>
+                <th>EPS</th>
+                <th style="width: 160px;">Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for paciente in pacientes %}
+            <tr>
+                <td>{{ paciente.nombre_completo }}</td>
+                <td>{{ paciente.identificacion }}</td>
+                <td>{{ paciente.fecha_nacimiento|date:"d/m/Y" }}</td>
+                <td>{{ paciente.contacto }}</td>
+                <td>{{ paciente.eps }}</td>
+                <td>
+                    <a href="{% url 'pacientes:editar_paciente' paciente.id %}" 
+                       class="btn btn-sm btn-outline-primary">
+                        ✏ Editar
+                    </a>
+
+                    {% if paciente.hce %}
+                    <a href="{% url 'historias:ver_historia' paciente.hce.id %}"
+                       class="btn btn-sm btn-outline-secondary ms-1">
+                        📄 Historia
+                    </a>
+                    {% endif %}
+                </td>
+            </tr>
+
+            {% empty %}
+            <tr>
+                <td colspan="6" class="text-center">
+                    No hay pacientes registrados.
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</section>
+{% endblock %}
+
+<!-- -------------------------------------------------------------------
+     Control de cambios
+-----------------------------------------------------------------------
+     | Versión | Fecha       | Autor / Responsable      | Descripción de cambios |
+     |---------|------------|--------------------------|-----------------------|
+     | 1.3     | 23/11/2025 | Prixma Software Projects | Se añade botón VOLVER dinámico por rol |
+     | 1.4     | 02/12/2025 | Prixma Software Projects | Se añade formulario de búsqueda y filtrado de pacientes |
+------------------------------------------------------------------- -->

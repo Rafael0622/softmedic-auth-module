@@ -1,0 +1,14 @@
+<!-- pacientes/templates/pacientes/dashboard.html -->
+<h1>Dashboard de Pacientes</h1>
+
+{% if user.rol == "ADMIN" %}
+<p>Bienvenido ADMIN: puedes ver y administrar todos los pacientes.</p>
+{% elif user.rol == "MEDICO" %}
+<p>Bienvenido MÉDICO: puedes ver pacientes y agregar notas médicas.</p>
+{% elif user.rol == "RECEPCIONISTA" %}
+<p>Bienvenido RECEPCIONISTA: puedes ver información administrativa y registrar pacientes.</p>
+{% else %}
+<p>Rol no asignado. Contacte al administrador.</p>
+{% endif %}
+
+<p>Pronto se mostrarán los pacientes registrados.</p>

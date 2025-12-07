@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}Panel del Recepcionista{% endblock %}
+
+{% block content %}
+<div class="card shadow p-4">
+    <h2 class="text-warning mb-3">Panel del Recepcionista</h2>
+    <p>Bienvenido, {{ user.nombre }}. Desde este panel puede gestionar pacientes, citas y realizar tareas administrativas básicas.</p>
+    <hr>
+
+    <!-- 🔹 Opciones principales del recepcionista -->
+    <ul class="list-group mb-4">
+
+        <!-- ✅ CONECTADO A TU SISTEMA REAL -->
+        <li class="list-group-item">
+            <a href="{% url 'pacientes:registrar_paciente' %}" class="text-decoration-none">
+                👤 Registrar paciente
+            </a>
+        </li>
+
+        <!-- ✅ CONECTADO A TU SISTEMA REAL -->
+        <li class="list-group-item">
+            <a href="{% url 'pacientes:listar_pacientes' %}" class="text-decoration-none">
+                📋 Listar pacientes
+            </a>
+        </li>
+
+        <!-- Futuras funciones (listas para conectar luego) -->
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">
+                📅 Agendar cita médica
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">
+                🔍 Consultar estado de cita
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">
+                🧾 Emitir comprobante o recibo
+            </a>
+        </li>
+    </ul>
+
+    <!-- 🔸 Sección administrativa -->
+    <h5 class="text-secondary mb-2">Opciones administrativas</h5>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">
+                📋 Control de asistencia de médicos
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">
+                🏥 Administración de consultorios
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="text-decoration-none">
+                📁 Reporte de citas diarias
+            </a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

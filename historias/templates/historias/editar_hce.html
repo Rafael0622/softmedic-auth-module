@@ -1,0 +1,114 @@
+<!-- -------------------------------------------------------------------
+     Proyecto: SOFT-MEDIC
+     Archivo: softmedic/historias/templates/historias/editar_hce.html
+     Versión: 2.0
+     Fecha: 08/02/2025
+     Elaborado por: Prixma Software Projects
+     Revisado por: Dirección Técnica de SOFT-MEDIC
+------------------------------------------------------------------- -->
+
+{% extends "base.html" %}
+{% load form_tags %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <h2 class="mb-4 text-primary">
+        🏥 Registrar Historia Clínica – {{ form.instance.paciente.nombre_completo }}
+    </h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <!-- DATOS GENERALES -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-primary text-white">
+                Información General
+            </div>
+            <div class="card-body">
+
+                <p><strong>Médico responsable:</strong> {{ request.user.nombre }}</p>
+                <p><strong>Fecha de apertura:</strong> {{ form.instance.fecha_ingreso|date:"d/m/Y" }}</p>
+
+                <div class="mb-3">
+                    {{ form.paciente.label_tag }}
+                    {{ form.paciente|add_class:"form-select" }}
+                </div>
+
+                <div class="mb-3">
+                    {{ form.resumen_clinico.label_tag }}
+                    {{ form.resumen_clinico }}
+                </div>
+
+                <div class="mb-3">
+                    {{ form.notas_adicionales.label_tag }}
+                    {{ form.notas_adicionales }}
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIAGNÓSTICOS -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-info text-white">Diagnósticos</div>
+            <div class="card-body">
+                {{ diag_formset.management_form }}
+                {% for f in diag_formset %}
+                    <div class="mb-2 border p-2 rounded">
+                        {{ f.descripcion|add_class:"form-control" }}
+                        {{ f.DELETE }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- MEDICAMENTOS -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-warning text-dark">Medicamentos</div>
+            <div class="card-body">
+                {{ med_formset.management_form }}
+                {% for f in med_formset %}
+                    <div class="mb-2 border p-2 rounded">
+                        {{ f.nombre|add_class:"form-control" }}
+                        {{ f.DELETE }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- OBSERVACIONES -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-secondary text-white">Observaciones</div>
+            <div class="card-body">
+                {{ obs_formset.management_form }}
+                {% for f in obs_formset %}
+                    <div class="mb-2 border p-2 rounded">
+                        {{ f.detalle|add_class:"form-control" }}
+                        {{ f.DELETE }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="d-flex justify-content-between mb-5">
+            <a href="{% url 'users:medico_dashboard' %}" class="btn btn-secondary">
+                ⬅ Volver
+            </a>
+
+            <button type="submit" class="btn btn-success">
+                💾 Guardar Historia Clínica
+            </button>
+        </div>
+
+    </form>
+</div>
+{% endblock %}
+
+<!-- -------------------------------------------------------------------
+     Control de cambios
+----------------------------------------------------------------------- 
+| Versión | Fecha      | Autor / Responsable
+| 2.0     | 08/02/2025 | Prixma Software Projects
+| Eliminado selector de médico y añadido control automático por sesión
+----------------------------------------------------------------------- -->

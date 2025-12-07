@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container mt-4">
+
+    <h2 class="mb-3">
+        {% if paciente %}Editar Paciente{% else %}Registrar Paciente{% endif %}
+    </h2>
+
+    <form method="post" action="" novalidate>
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        <div class="form-group mb-3">
+            {{ form.nombre_completo.label_tag }}
+            {{ form.nombre_completo }}
+            {{ form.nombre_completo.errors }}
+        </div>
+
+        <div class="form-group mb-3">
+            {{ form.identificacion.label_tag }}
+            {{ form.identificacion }}
+            {{ form.identificacion.errors }}
+        </div>
+
+        <div class="form-group mb-3">
+            {{ form.fecha_nacimiento.label_tag }}
+            {{ form.fecha_nacimiento }}
+            {{ form.fecha_nacimiento.errors }}
+        </div>
+
+        <div class="form-group mb-3">
+            {{ form.contacto.label_tag }}
+            {{ form.contacto }}
+            {{ form.contacto.errors }}
+        </div>
+
+        <div class="form-group mb-3">
+            {{ form.eps.label_tag }}
+            {{ form.eps }}
+            {{ form.eps.errors }}
+        </div>
+
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">
+                {% if paciente %}Guardar cambios{% else %}Registrar{% endif %}
+            </button>
+
+            <a href="{% url 'pacientes:listar_pacientes' %}" class="btn btn-secondary">
+                Cancelar
+            </a>
+        </div>
+
+    </form>
+
+</section>
+{% endblock %}
+
+<!-- -------------------------------------------------------------------
+     Control de cambios
+-------------------------------------------------------------------
+| Versión | Fecha       | Autor / Responsable                                  | Descripción de cambios                                      |
+|------|------------|-----------------------------------------------------------|-------------------------------------------------------------|
+| 1.0  | 14/11/2025 | Equipo de Arquitectura y Análisis Técnico Soft-Medic     | Versión inicial estable.                                    |
+| 1.1  | 17/11/2025 | Prixma Software Projects                                  | Unificación total: crear/editar en una sola plantilla.      |
+| 1.2  | 23/11/2025 | Prixma Software Projects                                  | Eliminación de bloques duplicados (corrección crítica).     |
+------------------------------------------------------------------- -->

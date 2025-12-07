@@ -1,0 +1,104 @@
+<!-- ============================================================== -->
+<!-- Proyecto: SOFT-MEDIC                                          -->
+<!-- Archivo: pacientes/registrar_paciente.html                   -->
+<!-- Versión: 1.2                                                  -->
+<!-- Fecha: 23/11/2025                                             -->
+<!-- Elaborado por: Prixma Software Projects                       -->
+<!-- Revisado por: Dirección Técnica de SOFT-MEDIC                 -->
+<!-- ============================================================== -->
+
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}Registrar Paciente{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+
+        <h2 class="text-primary mb-3">📋 Registro de nuevo paciente</h2>
+        <p class="text-muted">
+            Complete el siguiente formulario para registrar un nuevo paciente en el sistema SOFT-MEDIC.
+        </p>
+
+        <hr>
+
+        {% if messages %}
+        <div class="alert alert-warning">
+            {% for message in messages %}
+                <p class="mb-0">{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if form.errors %}
+        <div class="alert alert-danger">
+            <strong>Errores encontrados:</strong>
+            {{ form.errors }}
+        </div>
+        {% endif %}
+
+        <form method="POST" action="{% url 'pacientes:registrar_paciente' %}" novalidate>
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Nombre completo</strong></label>
+                {{ form.nombre_completo|add_class:"form-control" }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Identificación</strong></label>
+                {{ form.identificacion|add_class:"form-control" }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Fecha de nacimiento</strong></label>
+                {{ form.fecha_nacimiento|add_class:"form-control" }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>Contacto</strong></label>
+                {{ form.contacto|add_class:"form-control" }}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label"><strong>EPS / Aseguradora</strong></label>
+                {{ form.eps|add_class:"form-control" }}
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between">
+
+                <!-- ✅ BOTÓN VOLVER DINÁMICO -->
+                {% if user.rol == 'RECEPCIONISTA' %}
+                    <a href="{% url 'users:recepcionista_dashboard' %}" class="btn btn-secondary">
+                        ⬅ Volver
+                    </a>
+                {% elif user.rol == 'MEDICO' %}
+                    <a href="{% url 'users:medico_dashboard' %}" class="btn btn-secondary">
+                        ⬅ Volver
+                    </a>
+                {% elif user.rol == 'ADMIN' %}
+                    <a href="{% url 'users:admin_dashboard' %}" class="btn btn-secondary">
+                        ⬅ Volver
+                    </a>
+                {% endif %}
+
+                <button type="submit" class="btn btn-success">
+                    💾 Guardar Paciente
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+{% endblock %}
+
+<!-- ============================================================= -->
+<!-- CONTROL DE CAMBIOS                                           -->
+<!-- Versión | Fecha       | Autor / Responsable               | Descripción de cambios |
+<!-- 1.2     | 23/11/2025  | Prixma Software Projects          | Botón volver dinámico según rol -->
+<!-- ============================================================= -->

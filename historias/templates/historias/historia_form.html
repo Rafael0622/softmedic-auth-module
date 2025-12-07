@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">{% if object %}Editar Historia Clínica{% else %}Registrar Historia Clínica{% endif %}</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        <div class="mb-3">
+            {{ form.paciente.label_tag }}
+            {{ form.paciente|add_class:"form-select" }}
+            {{ form.paciente.errors }}
+        </div>
+        <div class="mb-3">
+            {{ form.medico_responsable.label_tag }}
+            {{ form.medico_responsable|add_class:"form-select" }}
+            {{ form.medico_responsable.errors }}
+        </div>
+        <div class="mb-3">
+            {{ form.resumen_clinico.label_tag }}
+            {{ form.resumen_clinico|add_class:"form-control" }}
+            {{ form.resumen_clinico.errors }}
+        </div>
+        <div class="mb-3">
+            {{ form.notas_adicionales.label_tag }}
+            {{ form.notas_adicionales|add_class:"form-control" }}
+            {{ form.notas_adicionales.errors }}
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-success me-2">Guardar</button>
+            <a href="{% url 'historias:listar_historias' %}" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

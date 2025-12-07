@@ -1,0 +1,5 @@
+INFO 2025-12-02 19:50:46,679 [audit] signals - [AUDITORÍA] Historia Clínica eliminada | ID 1 | Paciente: Juan Pérez | Usuario: Desconocido | Fecha: 2025-12-03 00:50:46.679657+00:00
+INFO 2025-12-02 19:52:10,738 [audit] signals - [AUDITORÍA] Historia Clínica eliminada | ID 1 | Paciente: Juan Pérez | Usuario: Desconocido | Fecha: 2025-12-03 00:52:10.738153+00:00
+INFO 2025-12-02 19:54:31,542 [audit] signals - [AUDITORÍA] Historia Clínica eliminada | ID 1 | Paciente: Juan Pérez | Usuario: Desconocido | Fecha: 2025-12-03 00:54:31.542594+00:00
+INFO 2025-12-02 19:56:51,832 [audit] signals - [AUDITORÍA] Historia Clínica eliminada | ID 1 | Paciente: Juan Pérez | Usuario: Desconocido | Fecha: 2025-12-03 00:56:51.832818+00:00
+INFO 2025-12-02 19:56:54,055 [audit] signals - [AUDITORÍA] Historia Clínica eliminada | ID 1 | Paciente: Juan Pérez | Usuario: Desconocido | Fecha: 2025-12-03 00:56:54.055873+00:00
